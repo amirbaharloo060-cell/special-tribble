@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پوشاک بچه‌گانه</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Vazirmatn',sans-serif;
+    margin:0;
+    background:
+    repeating-linear-gradient(45deg,#000,#000 6px,#111 6px,#111 12px);
+    color:#fff;
+}
+
+/* هدر */
+header{
+    text-align:center;
+    padding:18px;
+    border-bottom:2px solid gold;
+    background:#000;
+}
+header h1{
+    margin:0;
+    color:gold;
+    font-size:1.8em;
+}
+
+/* محصولات */
+.products{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:18px;
+}
+
+/* کارت محصول */
+.product-card{
+    background:#111;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid #333;
+    box-shadow:0 0 0px gold;
+    transition:0.35s;
+}
+.product-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px gold;
+    border:1px solid gold;
+}
+.product-card img{
+    width:100%;
+    display:block;
+}
+
+/* متن */
+.product-card h3{
+    margin:10px 0 5px 0;
+    color:gold;
+    font-size:1em;
+    text-align:center;
+}
+.product-card p{
+    text-align:center;
+    margin:0 0 10px 0;
+    color:#ccc;
+    font-size:0.9em;
+}
+
+/* دکمه خرید */
+.buy-btn{
+    display:block;
+    margin:10px auto 15px auto;
+    width:80%;
+    padding:8px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(45deg,#d4af37,gold,#f6e27a);
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+.buy-btn:hover{
+    transform:scale(1.05);
+}
+
+/* فوتر */
+footer{
+    text-align:center;
+    padding:15px;
+    border-top:2px solid gold;
+    background:#000;
+    font-size:0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>پوشاک بچه‌گانه</h1>
+</header>
+
+<section class="products">
+
+<div class="product-card">
+<img src="shirt1.jpg">
+<h3>پیراهن بچه‌گانه</h3>
+<p>280,000 تومان</p>
+<button class="buy-btn">خرید</button>
+</div>
+
+<div class="product-card">
+<img src="pants1.jpg">
+<h3>شلوار بچه‌گانه</h3>
+<p>210,000 تومان</p>
+<button class="buy-btn">خرید</button>
+</div>
+
+<div class="product-card">
+<img src="jacket1.jpg">
+<h3>کاپشن بچه‌گانه</h3>
+<p>350,000 تومان</p>
+<button class="buy-btn">خرید</button>
+</div>
+
+</section>
+
+<footer>
+اینستاگرام: your_id@
+</footer>
+
+</body>
+</html>
